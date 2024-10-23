@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #863640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #FABFBF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Grupos de inputs */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    background-color: #FABFBF;
+    border: 2px solid #863640;
+    color: #863640;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #863640;
+    color: #FABFBF;
+}
