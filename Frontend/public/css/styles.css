@@ -2,69 +2,71 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #863640;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-/* Contenedor del login */
-.login-container {
-    background-color: #FABFBF;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-.login-title {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-/* Grupos de inputs */
-.input-group {
-    margin-bottom: 1rem;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Botones */
-.buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.btn {
-    background-color: #FABFBF;
-    border: 2px solid #863640;
-    color: #863640;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    flex: 1;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-.btn:hover {
     background-color: #863640;
-    color: #FABFBF;
+}
+
+/* Cuadro rosa */
+.box {
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFB5B5;
+    border-radius: 40px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+/* contenedor para la letra "Iniciar Sesion"*/
+.contenedor {
+    position: relative;
+    width: 50%;
+    height: 40px;
+}
+
+.texto {
+    position: relative;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Sombra para crear el borde */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Cuadro Usuario */
+.box1 {
+    /*Tamaño del cuadro*/
+    width: 300px;
+    height: 50px;
+    /*Posicion del cuadro*/
+    margin-left: 150px;
+    margin-top: 70px;
+    /*color del cuadro*/
+    background-color: #ffffff;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Cuadro Contraseña */
+.box2 {
+    /*Tamaño del cuadro*/
+    width: 300px;
+    height: 50px;
+    /*Posicion del cuadro*/
+    margin-left: 150px;
+    margin-top: 80px;
+    /*color del cuadro*/
+    background-color: #ffffff;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
