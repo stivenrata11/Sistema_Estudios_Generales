@@ -4,36 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnAcceder = document.getElementById('btnAcceder');
     const btnCrear = document.getElementById('btnCrear');
     
-    // En la página de registro
-    const btnRegistrar = document.getElementById('btnRegistrar');
-    const btnVolver = document.getElementById('btnVolver');
-
     // Evento para el botón Acceder
     if (btnAcceder) {
-        btnAcceder.addEventListener('click', function() {
+        btnAcceder.addEventListener('click', function(e) {
+            e.preventDefault();
             // Aquí puedes agregar la validación del formulario
-            window.location.href = '/principal.html';
+            window.location.href = 'principal.html';
         });
     }
 
     // Evento para el botón Crear Cuenta
     if (btnCrear) {
-        btnCrear.addEventListener('click', function() {
-            window.location.href = '/registro.html';
-        });
-    }
-
-    // Eventos para la página de registro
-    if (btnRegistrar) {
-        btnRegistrar.addEventListener('click', function() {
-            // Aquí irá la lógica de registro
-            window.location.href = '/principal.html';
-        });
-    }
-
-    if (btnVolver) {
-        btnVolver.addEventListener('click', function() {
-            window.location.href = '/index.html';
+        btnCrear.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'registro.html';
         });
     }
 
@@ -42,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loginForm.addEventListener('submit', function(e) {
             e.preventDefault();
             // Aquí irá la lógica de autenticación cuando la implementes
+            window.location.href = 'principal.html';
         });
     }
 });
