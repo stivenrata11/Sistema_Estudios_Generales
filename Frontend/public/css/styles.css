@@ -9,64 +9,86 @@ body {
     background-color: #863640;
 }
 
-/* Cuadro rosa */
+/* Contenedor principal */
 .box {
-    width: 600px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding: 40px;
     background-color: #FFB5B5;
     border-radius: 40px;
     border: 2px solid black;
-    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-}
-/* contenedor para la letra "Iniciar Sesion"*/
-.contenedor {
-    position: relative;
-    width: 50%;
-    height: 40px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* Contenedor del título */
+.contenedor {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo del título "Login" */
 .texto {
-    position: relative;
-    top: 100%;
-    left: 100%;
-    transform: translate(-50%, -50%);
     color: white;
     text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Sombra para crear el borde */
-    font-size: 30px;
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    font-size: 36px;
     font-weight: bold;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-/* Cuadro Usuario */
-.box1 {
-    /*Tamaño del cuadro*/
-    width: 300px;
-    height: 50px;
-    /*Posicion del cuadro*/
-    margin-left: 150px;
-    margin-top: 70px;
-    /*color del cuadro*/
-    background-color: #ffffff;
-    border: 2px solid black;
-    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+/* Contenedor de inputs */
+.input-container {
+    margin: 20px 0;
 }
 
-/* Cuadro Contraseña */
-.box2 {
-    /*Tamaño del cuadro*/
-    width: 300px;
+/* Estilos de los campos de entrada */
+.input-box {
+    width: 100%;
     height: 50px;
-    /*Posicion del cuadro*/
-    margin-left: 150px;
-    margin-top: 80px;
-    /*color del cuadro*/
-    background-color: #ffffff;
+    background-color: white;
     border: 2px solid black;
-    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 18px;
+    color: #666;
+    box-sizing: border-box;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Estilos de los botones */
+.button {
+    background-color: #FFB5B5;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Efecto hover para los botones */
+.button:hover {
+    background-color: #863640; /* Color de fondo al pasar el cursor */
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
